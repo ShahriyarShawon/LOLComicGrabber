@@ -1,2 +1,6 @@
 .vscode
-setup.py
+.DS_STORE
+build
+dist
+*.egg*
+build_and_upload.sh
