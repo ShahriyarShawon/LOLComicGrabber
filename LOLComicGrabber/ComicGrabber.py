@@ -158,6 +158,8 @@ class LOLComicGrabber():
         :param key -- issue number (if applicable)
         :param name -- name of comic issue/series
         """
+        key = key.replace(":","")
+        name = name.replace(":","")
         dirname = f"{name} {key}" if key != name else name
         try:
             os.mkdir(dirname)
