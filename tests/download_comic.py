@@ -2,4 +2,4 @@ from ..LOLComicGrabber.ComicGrabber import LOLComicGrabber
 
 comicgrabber = LOLComicGrabber()
 
-comicgrabber.download("Lux", 1)
+comicgrabber.download("Nami: Into the Abyss",is_series=False)
