@@ -7,7 +7,7 @@ with open("requirements.txt", "r") as requirements:
 
 setuptools.setup(
     name="LOLComicGrabber",
-    version="0.0.1",
+    version="0.0.2",
     author="Shahriyar Shawon",
     author_email="ShahriyarShawon321@gmail.com",
     description="Download League of Legends comics for offline use",

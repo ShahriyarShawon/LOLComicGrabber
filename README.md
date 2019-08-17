@@ -48,3 +48,8 @@ from LOLComicGrabber.ComicGrabber import LOLComicGrabber
 grabber = LOLComicGrabber()
 grabber.download("Nami: Into the Abyss", is_series=False)
 ```
+
+
+# What's New?
+
+0.0.2 - Made filename and directory names friendly for Windows
