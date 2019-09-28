@@ -61,6 +61,12 @@ class LOLComicGrabber():
             series_response[series["title"]] = series
         return series_response
 
+    def get_series_issues(self, series):
+        series_title = series["url"].split("/")[-1]
+        series_link = f"https://universe-meeps.leagueoflegends.com/v1/en_us/comics/{series_title}/index.json"
+        series_obj = self.objectify(series_link)
+        return series_obj["issues"]
+
     def get_one_shots(self):
         """
         get_one_shots() -> dict
@@ -158,8 +164,8 @@ class LOLComicGrabber():
         :param key -- issue number (if applicable)
         :param name -- name of comic issue/series
         """
-        key = key.replace(":","")
-        name = name.replace(":","")
+        key = key.replace(":", "")
+        name = name.replace(":", "")
         dirname = f"{name} {key}" if key != name else name
         try:
             os.mkdir(dirname)
