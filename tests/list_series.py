@@ -1,3 +1,4 @@
+# replace this with from LOLComicGrabber.ComicGrabber import LOLComicGrabber in your own projects
 from ..LOLComicGrabber.ComicGrabber import LOLComicGrabber
 
 comicgrabber = LOLComicGrabber()

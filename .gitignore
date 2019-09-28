@@ -4,3 +4,4 @@ build
 dist
 *.egg*
 build_and_upload.sh
+__pycache__

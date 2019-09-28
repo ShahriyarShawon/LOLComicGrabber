@@ -5,9 +5,11 @@ with open("README.md", "r") as fh:
 with open("requirements.txt", "r") as requirements:
     dependencies = requirements.readlines()
 
+current_version = "0.0.2"
+
 setuptools.setup(
     name="LOLComicGrabber",
-    version="0.0.2",
+    version=current_version,
     author="Shahriyar Shawon",
     author_email="ShahriyarShawon321@gmail.com",
     description="Download League of Legends comics for offline use",
@@ -21,4 +23,9 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    entry_points={
+        "console_scripts": [
+            "lcg = LOLComicGrabber.__main__:main"
+        ]
+    }
 )
