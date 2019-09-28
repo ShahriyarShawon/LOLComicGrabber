@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 with open("requirements.txt", "r") as requirements:
     dependencies = requirements.readlines()
 
-current_version = "0.0.2"
+current_version = "0.0.3"
 
 setuptools.setup(
     name="LOLComicGrabber",
