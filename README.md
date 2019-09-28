@@ -23,7 +23,7 @@ python setup.py install
 
 
 # Usage
-
+[Video showing off how to use it](https://youtu.be/V35vzlbJqwk)
 ## As CLI App
 
 ```
