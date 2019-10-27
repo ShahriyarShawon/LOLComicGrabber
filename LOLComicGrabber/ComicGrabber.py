@@ -1,6 +1,5 @@
 import requests
 import json
-from bs4 import BeautifulSoup
 import shutil
 import os
 
@@ -116,7 +115,7 @@ class LOLComicGrabber():
             "universe-comics", "universe-meeps").replace("comics/en_us",
                                                          "v1/en_us/comics")
         comic_issues_obj = self.objectify(url)
-        for issue_index, issue in enumerate(comic_issues_obj["issues"]):
+        for _, issue in enumerate(comic_issues_obj["issues"]):
             issues[issue["title"]] = self.comic_json_link_builder(
                 issue["url"])
         return issues
