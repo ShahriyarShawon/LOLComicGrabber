@@ -13,4 +13,4 @@ bs4 = "*"
 requests-html = "*"
 
 [requires]
-python_version = "3.6.4"
+python_version = "3"
