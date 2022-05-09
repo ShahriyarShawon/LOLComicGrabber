@@ -1,5 +1,5 @@
 # replace this with from LOLComicGrabber.ComicGrabber import LOLComicGrabber in your own projects
-from LOLComicGrabber.ComicGrabber import LOLComicGrabber
+from lolcomicgrabber.LOLComicGrabber import LOLComicGrabber
 
 comicgrabber = LOLComicGrabber()
 

@@ -6,19 +6,7 @@ LOLComicGrabber is a python package aimed at making downloading the League of Le
 Install from pip
 
 ```bash 
-pip install LOLComicGrabber
-```
-
-or install from source
-
-```bash
-git clone https://github.com/ShahriyarShawon/LOLComicGrabber.git
-```
-```bash
-cd LOLComicGrabber
-```
-```bash
-python setup.py install 
+pip install lolcomicgrabber
 ```
 
 
@@ -69,7 +57,7 @@ lcg download one_shot -t "Nami: Into the Abyss"
 
 Download Issue 3 of Ashe Warmother
 ```python
-from LOLComicGrabber.LOLComicGrabber import LOLComicGrabber
+from lolcomicgrabber.LOLComicGrabber import LOLComicGrabber
 
 grabber = LOLComicGrabber()
 grabber.download("Warmother",3)
@@ -77,7 +65,7 @@ grabber.download("Warmother",3)
 
 List one shots
 ```python
-from LOLComicGrabber.LOLComicGrabber import LOLComicGrabber
+from lolcomicgrabber.LOLComicGrabber import LOLComicGrabber
 
 grabber = LOLComicGrabber()
 for key,value in grabber.get_one_shots().items():
@@ -86,7 +74,7 @@ for key,value in grabber.get_one_shots().items():
 
 Download One Shot
 ```python
-from LOLComicGrabber.ComicGrabber import LOLComicGrabber
+from lolcomicgrabber.LOLComicGrabber import LOLComicGrabber
 
 grabber = LOLComicGrabber()
 grabber.download("Nami: Into the Abyss", is_series=False)
