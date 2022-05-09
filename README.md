@@ -69,7 +69,7 @@ lcg download one_shot -t "Nami: Into the Abyss"
 
 Download Issue 3 of Ashe Warmother
 ```python
-from LOLComicGrabber.ComicGrabber import LOLComicGrabber
+from LOLComicGrabber.LOLComicGrabber import LOLComicGrabber
 
 grabber = LOLComicGrabber()
 grabber.download("Warmother",3)
@@ -77,7 +77,7 @@ grabber.download("Warmother",3)
 
 List one shots
 ```python
-from LOLComicGrabber.ComicGrabber import LOLComicGrabber
+from LOLComicGrabber.LOLComicGrabber import LOLComicGrabber
 
 grabber = LOLComicGrabber()
 for key,value in grabber.get_one_shots().items():

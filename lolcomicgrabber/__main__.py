@@ -1,5 +1,5 @@
 import sys
-from .ComicGrabber import LOLComicGrabber
+from .LOLComicGrabber import LOLComicGrabber
 import argparse
 
 
